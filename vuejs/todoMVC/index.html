@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<title>ToDo_MVC</title>
+</head>
+<body>
+<div id="app">
+	<table>
+		<thead>
+		<tr>
+			<th class="id">ID</th>
+			<th class="comment">コメント</th>
+		</tr>
+		</thead>
+	</table>
+	<form class="add-form" v-on:submit.prevent="doAdd">
+		コメント<input type="text" ref="comment">
+		<button type="submit">追加</button>
+	</form>
+</div>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</html>
