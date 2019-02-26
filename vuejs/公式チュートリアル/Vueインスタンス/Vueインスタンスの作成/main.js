@@ -1,1 +1,0 @@
-var vm = new Vue({})
